@@ -1,0 +1,12 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">Original URL = <%= @link.original_url %></h5>
+          <h5>Shortened URL: </h5><%= link_to @link.shortened_url, @link.original_url, class: "btn btn-success" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
